@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pikirkan angka antara 1 - 31</h1>
+        <div id="game-box">
+            <p id="instruction">Apakah angka Anda ada di sini?</p>
+            <div id="number-grid" class="grid"></div>
+            <div class="buttons">
+                <button onclick="handleAnswer(true)">YA</button>
+                <button onclick="handleAnswer(false)">TIDAK</button>
+            </div>
+        </div>
+        <div id="result-box" class="hidden">
+            <h2>Angka yang Anda pikirkan adalah:</h2>
+            <h1 id="final-number">0</h1>
+            <button onclick="resetGame()">Main Lagi</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
